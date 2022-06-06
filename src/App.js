@@ -5,8 +5,7 @@ import SignUp from "./components/SignUp";
 import { Redirect, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import placingOrder from "./components/placingOrder";
-import Notification from "./components/notificationComponent/Notification";
-import SellerHomePage from "./components/SellerPageComponenets/SellerHomePage";
+
 
 export default function App() {
   return (
@@ -17,7 +16,7 @@ export default function App() {
         path="/home"
         render={(props) => <Home display={true} {...props} />}
       />
-      <Route path="./order" componenet={placingOrder}/>
+      <Route path="/order" componenet={placingOrder}/>
 
       <Redirect to="/login" />
       {/* <Route path="/notification" component={Notification} />

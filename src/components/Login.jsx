@@ -12,8 +12,8 @@ import Grid from "@material-ui/core/Grid";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import users from "./../../data/users";
 import image from "./Images/image.jpg";
+import users from "../components/data/users";
 import authService from "./../service/authService";
 
 function Copyright() {
